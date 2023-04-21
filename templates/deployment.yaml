@@ -35,8 +35,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - name: index-html
-            mountPath: /usr/share/nginx/html/index2.html
-            subPath: index2.html
+            mountPath: /usr/share/nginx/html/index.html
+            subPath: index.html
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
